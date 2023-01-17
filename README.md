@@ -27,7 +27,7 @@
 * EZENC (CRYPTO):
    - Đề bài:  1 file txt gồm các ký tự đã bị mã hóa: 4e544d7a4d44526c4e5451314d544d7a4e7a51304e6a59794e6d51305a5463324e5745304e7a5a6a4e7a553159544d784d7a6b305954597a4d7a457a4f5451304e6a497a4d6a4d354e7a4d304f54557a4e4455324f4459324e54457a5a444e6b
    - Hướng giải: em sử dụng https://gchq.github.io/CyberChef/ để giải mã đoạn mã này theo trình tự: From Hex - From Base64 - From Hex - From Base64
-   Cuối cùng em có flag: KCSC{Encoding_Is_Cool!!!}
+   - Cuối cùng em có flag: KCSC{Encoding_Is_Cool!!!}
 
 * FIND ME (REVERSE)
    Đề bài: souce.exe
