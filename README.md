@@ -4,7 +4,7 @@
     
     
 * PHPRI PHPRAI (WEB)
-    Đề bài: http://47.254.251.2:8889/
+  - Đề bài: http://47.254.251.2:8889/
   *Hướng giải: Theo em đây là tổng gộp của 5 bài nhỏ hợp lại, nên em cần phải xử lý từng bài nhỏ để trang hiện đủ cả 5 phần của flag.*
   *Cả 5 bài này đều là phải nhập tham số vào từ URL sao cho tham số đó thỏa mãn yêu cầu đề bài để hiện ra flag.*
   - Bài 1: Em cần phải nhập vào 2 mảng 1[] và 2[] sao cho nó không rỗng, và thỏa mãn điều kiện 2 chuỗi em nhập vào khác nhau, mà md5 Hash của 2 chuỗi này giống nhau. Em đã chọn mảng &1[] = 1 và &2[] = 2 vì em biết giá trị của nó khác nhau, nhưng khi khi md5 2 mảng này nó ra lỗi, 2 mảng cùng lỗi thì giống nhau, em đã thử với các số và nhận ra chỉ cần là 2 số khác nhau thì sẽ thỏa mãn nên em đã chọn 1 và 2. Nếu không chọn đúng theo yêu cầu đề bài thì em chắc phải chọn 1 cặp chuỗi mà cùng MD5 Hash mà có giá trị khác nhau, em đã thử và nó cũng đúng. Cuối cùng em ra được phần đầu của flag: KCSC{B0_u_Bu_S4
@@ -30,8 +30,8 @@
    - Cuối cùng em có flag: KCSC{Encoding_Is_Cool!!!}
 
 * FIND ME (REVERSE)
-   Đề bài: souce.exe
-   *Hướng giải: Em cần phải biết được file exe này được code bằng gì, từ đó xem được source code của chương trình*
+   - Đề bài: souce.exe
+   - *Hướng giải: Em cần phải biết được file exe này được code bằng gì, từ đó xem được source code của chương trình*
    - Đầu tiên em sẽ sử dụng tool Detect It Easy để xem file souce.exe này sử dụng ngôn ngữ nào. Vì sau khi chạy lệnh chương trình biến mất luôn và gài flag giả vào tất cả folder của ổ C. Sau khi sử dụng tool DIE.exe thì nó cho em ra kết quả file souce.exe này được code bằng python với packer là PyInstaller. Nên em đã tìm cách để chuyển ngược lại file này thành file souce.pyc rồi decompile. 
    - Vì file này chạy trên máy của em mà không cần python, nghĩa là file đã được đóng gói nên em cần tool để giải nén file exe này về file pyc. Tiếp theo em sử dụng tool PyInstaller Extractor ở trên github, sau đó đưa file souce.exe vào trong file pyinstxtractor-master để thực hiện việc giải nén. Sử dụng câu lệnh:               $ python pyinstxtractor.py souce.exe
    - Sau đấy sẽ xuất hiện file souce.exe_extracted, thì việc còn lại chỉ là deompyle file souce.pyc về thành souce.py là có thể xem đc source code. Em tìm được tool uncompyle6 ở trên github và em đã sử dụng nó với câu lệnh: uncompyle6 souce.pyc và em đã xem được source. Trong đấy em đã tìm thấy flag là:                        KCSC{T3t_n4y_4nh_kh0ng_th3m_d0t_ph4o_V1_ti3ng_cu0i_3m_r0n_r4_l0ng_4nh_r0i!}
