@@ -1,6 +1,6 @@
 # CTF-Write-Up
 
-        ***Tuyển Thành Viên Ban Chuyên Môn KCSC - Write-Up***
+        Tuyển Thành Viên Ban Chuyên Môn KCSC - Write-Up
     
     
 * PHPRI PHPRAI (WEB)
