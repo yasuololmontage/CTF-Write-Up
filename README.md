@@ -14,4 +14,5 @@
   - Bài 5: Em cần phải nhập vào chuỗi 6 mà khi thay thế bằng câu lệnh preg_replace. Theo đề thì nó sẽ thay đổi chuỗi mà em nhập vào bằng khoảng trống, nghĩa là giờ em cần phải nhập chữ KaCeEtCe như nào để khi tham số của em bị xóa hết chữ KaCeEtCe thì vẫn còn 1 chữ KaCeEtCe nữa. Em không thể dùng chuỗi 'KaCeEtCeKaCeEtCe' vì như vậy nó sẽ xóa hết chuỗi và không thỏa mãn đề bài, nên đã chọn là đẩy 1 chữ e về đằng sau, cụ thể là: &6= KaCeEtCKaCeEtCee. Lúc này câu lệnh kia sẽ thay chữ 'KaCeEtCe' thành khoảng trống, thì ghép lại sẽ thành chữ 'KaCeEtCe'. Và em có phần cuối của flag: QtC3F8fH6g} 
   
   Như vậy, với payload đầy đủ là: http://47.254.251.2:8889/?2[]=1&1[]=2&3[]=%22%22&4=01.4e5&5=%2069&6=KaCeEtCKaCeEtCee
-    -> Em có flag đầy đủ: KCSC{B0_u_Bu_S4C_8usssssss_https://www.youtube.com/watch?v=xQtC3F8fH6g}
+    
+  -> Em có flag đầy đủ: KCSC{B0_u_Bu_S4C_8usssssss_https://www.youtube.com/watch?v=xQtC3F8fH6g}
