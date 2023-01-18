@@ -1,6 +1,7 @@
 # CTF-Write-Up
 
         Tuyển Thành Viên Ban Chuyên Môn KCSC - Write-Up
+        Họ Tên: Nghiêm Trung Hậu - AT18B
     
     
 * PHPRI PHPRAI (WEB)
